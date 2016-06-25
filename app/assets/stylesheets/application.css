@@ -41,6 +41,17 @@ p {
   width: auto;
 }
 
+.viewbutton {
+  /* Rectangle 8: */
+  background: #4681A0;
+  border-radius: 100px;
+  width: 38.3%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  color: #ffffff;
+}
+
 .sidepanel {
   /*background: url('/assets/backgrd-side.png');
   background-repeat: no-repeat;
@@ -58,6 +69,12 @@ p {
   left: 0;
 }
 
+.sidepanel-contain {
+  margin-top: 45%;
+  padding: 5px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 958px) {
   .sidepanel {
     display: none;
@@ -71,7 +88,6 @@ p {
 }
 
 .logo {
-  margin-left: 5%;
 }
 
 .cards {
