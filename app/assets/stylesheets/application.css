@@ -22,6 +22,25 @@ p {
   margin: 5px;
 }
 
+ul {
+  list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  .universal-inline-block;
+	vertical-align:  middle;
+}
+
+.universal-inline-block {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -52,6 +71,10 @@ p {
   color: #ffffff;
 }
 
+.icons {
+  margin: 0 auto -15px;
+}
+
 .sidepanel {
   /*background: url('/assets/backgrd-side.png');
   background-repeat: no-repeat;
@@ -73,6 +96,7 @@ p {
   margin-top: 45%;
   padding: 5px;
   text-align: center;
+  width: 285px;
 }
 
 @media only screen and (max-width: 958px) {
