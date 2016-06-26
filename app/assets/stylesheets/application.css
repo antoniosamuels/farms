@@ -81,20 +81,48 @@ p {
     }
   }
 
+@media only screen and (max-width: 958px) {
+  .sidepanel-top {
+    background: url('/assets/backgrd-top@2x.jpg');
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    }
+  }
+
+  @media only screen and (min-width: 958px) {
+    .sidepanel-top {
+      display: none;
+      }
+    }
+
 .sidepanel-text {
   color: #ffffff;
   font-size: 1.38em;
   padding-top: 25px;
 }
 
+@media only screen and (max-width: 958px) {
+  .sidepanel-text-sm {
+    color: #ffffff;
+    font-size: 1.18em;
+    padding-top: 25px;
+  }
+}
+
 .logo {
+}
+
+.logo-top {
+
 }
 
 .cards {
   padding: 15px;
   margin: 10px;
   min-width: 352px;
-  max-width: 425px;
+  max-width: 100%;
   /* Rectangle 3: */
   background: #FAFAFA;
   box-shadow: 0px 2px 4px 0px rgba(164,164,164,0.50);
