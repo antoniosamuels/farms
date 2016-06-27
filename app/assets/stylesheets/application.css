@@ -16,10 +16,17 @@
 body {
   margin: 0px;
   background-color: #F2F2F2;
+  font-family: arial;
+  color: #515151;
 }
 
 p {
   margin: 5px;
+  font-size: 0.9em;
+}
+
+h1 {
+  margin: 0.3em;
 }
 
 ul {
@@ -33,6 +40,7 @@ li {
   list-style: none;
   .universal-inline-block;
 	vertical-align:  middle;
+  float: left;
 }
 
 .universal-inline-block {
@@ -66,13 +74,17 @@ li {
   border-radius: 100px;
   width: 38.3%;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto 5px;
   padding: 5px;
   color: #ffffff;
 }
 
 .icons {
   margin: 0 auto -15px;
+}
+
+.icons-img {
+  padding: 8px 2px 2px;
 }
 
 .sidepanel {
@@ -123,8 +135,9 @@ li {
 
 .sidepanel-text {
   color: #ffffff;
-  font-size: 1.38em;
+  font-size: 1.08em;
   padding-top: 25px;
+  font-weight: 100;
 }
 
 @media only screen and (max-width: 958px) {
