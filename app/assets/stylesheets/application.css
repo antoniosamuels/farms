@@ -29,6 +29,26 @@ h1 {
   margin: 0.3em;
 }
 
+.button {
+  /*background-color: #dcdcdc;
+  border: 1px solid #666;*/
+  width: 38.3%;
+  text-align: center;
+  margin: 10px auto 15px;
+  padding: 5px 15px 5px 15px;
+  color: #ffffff;
+  font-size: 0.9em;
+  text-decoration: none;
+
+  /* Rectangle 8: */
+  background: #4681A0;
+  border-radius: 100px;
+}
+
+.but {
+  padding: 10px;
+}
+
 ul {
   list-style: none;
 	margin: 0;
