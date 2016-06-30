@@ -203,3 +203,21 @@ li {
     flex: 0;
     }
   }
+
+
+/*code for slide panel*/
+
+.message {
+background:#181818;
+color:#FFF;
+position: absolute;
+top: 0;
+right: -800px;
+width: 800px;
+height: 100%;
+padding: 20px;
+transition: right 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+overflow: scroll;
+box-sizing: border-box;
+
+}
