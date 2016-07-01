@@ -88,6 +88,25 @@ li {
   width: auto;
 }
 
+.container-store {
+  margin-left: 300px;
+  margin-top: 35px;
+  min-width: auto;
+  max-width: 800px;
+  display:block;
+}
+
+@media only screen and (max-width: 958px) {
+  .container-store {
+    margin-left: 0px;
+    }
+  }
+
+.store-img {
+  display: inline-block;
+  width: 100%;
+}
+
 .viewbutton {
   /* Rectangle 8: */
   background: #4681A0;
