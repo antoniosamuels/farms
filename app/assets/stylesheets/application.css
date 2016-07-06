@@ -105,6 +105,10 @@ li {
     }
   }
 
+.sociallinks {
+  padding-top: 25px;
+}
+
 .store-img {
   display: inline-block;
   width: 100%;
