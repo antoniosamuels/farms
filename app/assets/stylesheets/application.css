@@ -96,6 +96,7 @@ li {
     display: block;
     background-color: #fff;
     padding: 25px;
+    height: 100vh;
 }
 
 @media only screen and (max-width: 958px) {
