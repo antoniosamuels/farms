@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :farms
 
-  root 'welcome#index'
+  root 'farms#index'
   # get 'welcome/store'
 
 end
