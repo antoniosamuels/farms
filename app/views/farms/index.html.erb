@@ -5,11 +5,11 @@
     <% farms.each do |farms| %>
       <div class="Grid-cell">
         <div class="cards">
-            <%= link_to farms do %>
-            <% end %>
-          <h2>
-            <%= link_to farms.title, farms %>
-          </h2>
+          <%= link_to farms do %>
+          <% end %>
+          <p>
+          <%= link_to farms.title, farms %>
+          </p>
         </div>
       </div>
     <% end %>
