@@ -1,6 +1,6 @@
 <div class="container">
 
-<% @farms.each_slice(4) do |farms| %>
+<% @farms.each_slice(3) do |farms| %>
   <div class="Grid Grid--gutters Grid--full large-Grid--fit u-textCenter">
     <% farms.each do |farms| %>
       <div class="Grid-cell">
@@ -8,7 +8,12 @@
           <%= link_to farms do %>
           <% end %>
           <p>
+          <%= link_to farms.address, farms %><br>
+          <%= link_to farms.hours, farms %><br>
           <%= link_to farms.title, farms %>
+          </p>
+          <p>
+          <%= link_to truncate(farms.description, :length => 120), farms %>
           </p>
         </div>
       </div>
