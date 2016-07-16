@@ -16,10 +16,24 @@
     </div>
   <% end %>
   <div class="panel-body">
-    <p><%= f.input :address, input_html: { class: 'form-control' } %></p>
-    <p><%= f.input :hours, input_html: { class: 'form-control' } %></p>
-    <p><%= f.input :title, input_html: { class: 'form-control' } %></p>
-    <p><%= f.input :description, input_html: { class: 'form-control' } %></p>
+    <p>
+      <%= f.label :Address %><br>
+      <%= f.text_field :address, input_html: { class: 'form-control' } %>
+    </p>
+    <p>
+      <%= f.label :Hours %><br>
+      <%= f.text_field :hours, input_html: { class: 'form-control' } %>
+    </p>
+    <p>
+      <%= f.label :Title %><br>
+      <%= f.text_field :title, input_html: { class: 'form-control' } %>
+    </p>
+    <p>
+      <%= f.label :Description %><br>
+      <%= f.text_field :description, input_html: { class: 'form-control' } %></p>
+    <p>
+      <%= f.label :Detail %><br>
+      <%= f.text_field :detail, input_html: { class: 'form-control' } %></p>
   </div>
   <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>

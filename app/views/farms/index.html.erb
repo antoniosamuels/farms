@@ -9,11 +9,14 @@
           <% end %>
           <p>
           <%= link_to farms.address, farms %><br>
-          <%= farms.hours %><br><br>  
+          <%= farms.hours %><br><br>
           <%= link_to farms.title, farms %>
           </p>
           <p>
           <%= truncate(farms.description, :length => 120) %>
+          </p>
+          <p>
+            <%= link_to farms.detail, farms %>
           </p>
         </div>
       </div>
