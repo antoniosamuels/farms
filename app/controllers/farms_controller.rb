@@ -41,11 +41,11 @@ end
 
 private
 
-def farm_params
-  params.require(:farm).permit(:address, :hours, :title, :description)
-end
+  def farm_params
+    params.require(:farm).permit(:address, :hours, :title, :description, :image)
+  end
 
-def find_farm
-  @farms = Farm.find(params[:id])
-end
+  def find_farm
+    @farms = Farm.find(params[:id])
+  end
 end

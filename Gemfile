@@ -9,9 +9,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'responsive_images', '~> 0.1.2'
-gem 'paperclip', '~> 5.0.0'
 gem 'carrierwave'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'paperclip', '~> 4.2.1'
 
 group :development, :test do
 

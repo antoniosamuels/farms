@@ -33,7 +33,11 @@
       <%= f.text_field :description, input_html: { class: 'form-control' } %></p>
     <p>
       <%= f.label :Detail %><br>
-      <%= f.text_field :detail, input_html: { class: 'form-control' } %></p>
+      <%= f.text_field :detail, input_html: { class: 'form-control' } %>
+    </p>
+    <p>
+        <%= f.input :image, input_html: { class: 'form-control' } %>
+    </p>
   </div>
   <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
