@@ -1,27 +1,24 @@
 <div class="container">
 
-<% @farms.each_slice(3) do |farms| %>
-  <div class="Grid Grid--gutters Grid--full large-Grid--fit u-textCenter">
-    <% farms.each do |farms| %>
-      <div class="Grid-cell">
-        <div class="cards">
-          <%= link_to farms do %>
-          <% end %>
-          <p>
-          <%= link_to farms.address, farms %><br>
-          <%= farms.hours %><br><br>
-          <%= link_to farms.title, farms %>
-          </p>
-          <p>
-          <%= truncate(farms.description, :length => 120) %>
-          </p>
-          <p>
-            <%= link_to "View Details", farms %>
-          </p>
+    <% @farms.each_slice(3) do |farms| %>
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit u-textCenter">
+        <% farms.each do |farms| %>
+        <div class="Grid-cell">
+            <div class="cards">
+                <%= link_to farms do %>
+                <% end %>
+                <p>
+                    <%= link_to farms.address, farms, :class => "address" %>
+                    <br><%= farms.hours %></p>
+                <%= link_to farms.title, farms, :class => "title" %>
+                <p>
+                    <%= truncate(farms.description, :length => 120) %>
+                </p>
+                <%= link_to "View Details", farms, class: 'btn' %>
+            </div>
         </div>
-      </div>
+        <% end %>
+    </div>
     <% end %>
-  </div>
-<% end %>
 
 </div>
