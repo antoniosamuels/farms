@@ -15,6 +15,9 @@
                     <%= truncate(farms.description, :length => 120) %>
                 </p>
                 <%= link_to "View Details", farms, class: 'btn' %>
+                <p>
+                  <%= farms.category_id %>
+                </p>
             </div>
         </div>
         <% end %>
