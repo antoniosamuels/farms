@@ -16,6 +16,7 @@
     </div>
   <% end %>
   <div class="panel-body">
+    <h1>Edit farm information</h1>
     <p>
       <%= f.label :Address %><br>
       <%= f.text_field :address, input_html: { class: 'form-control' } %>
@@ -33,8 +34,14 @@
       <%= f.text_area :description, input_html: { class: 'form-control' } %>
     </p>
     <p>
-        <%= f.input :image, input_html: { class: 'form-control' } %>
+      <%= f.label :Description %><br>
+      <%= f.input :image, input_html: { class: 'form-control' } %>
     </p>
+    <p>
+      <%= f.label :category_id %><br>
+      <%= f.association :category, as: :check_boxes %>
+    </p>
+
   </div>
   <%= f.button :submit, class: "btn" %>
 <% end %>

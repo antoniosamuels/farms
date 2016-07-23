@@ -11,22 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160718233707) do
+ActiveRecord::Schema.define(version: 20160723195331) do
 
-  create_table "farm", force: :cascade do |t|
-    t.string   "address"
-    t.string   "hours"
-    t.string   "title"
-    t.text     "description"
-    t.integer  "user_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.string   "detail"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+  create_table "category", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
+# Could not dump table "farm" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "farms", force: :cascade do |t|
     t.string   "title"

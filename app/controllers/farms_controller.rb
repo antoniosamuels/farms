@@ -42,7 +42,7 @@ end
 private
 
   def farm_params
-    params.require(:farm).permit(:address, :hours, :title, :description, :image)
+    params.require(:farm).permit(:address, :hours, :title, :description, :image, :category_id)
   end
 
   def find_farm
