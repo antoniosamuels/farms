@@ -1,3 +1,3 @@
 class Category < ActiveRecord::Base
-  has_many :farm
+  has_many :farms
 end

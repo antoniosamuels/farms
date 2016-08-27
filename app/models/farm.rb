@@ -1,7 +1,4 @@
 class Farm < ActiveRecord::Base
-  belongs_to :category
-  # has_many :category
-
   has_attached_file :image, styles: { :small => "200x400#", :large => "700x400#" }
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 end
